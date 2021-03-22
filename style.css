@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+  padding: 2rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+img {
+  width: 20%;
+  margin: auto 5rem;
+}
+
+nav {
+  background-color: #6ec7ed;
+  margin: 0;
+  border: solid 1px white;
+}
+
+/* .header1 {
+  background-image: url(memover.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: 80vh;
+  opacity: 80%;
+} */
+
+#videoBG {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 30rem;
+}
+
+.header2 {
+  background-image: url(Jonas\ og\ Lasse.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: 80vh;
+  opacity: 80%;
+}
+
+p {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  font-size: 5rem;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding-top: 14rem;
+}
+
+.posts {
+  display: flex;
+}
+
+.post {
+  display: flex;
+  justify-content: center;
+}
+.post img {
+  width: 80%;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.some {
+  margin-bottom: 2rem;
+}
+
+footer {
+  padding: 3rem;
+  background-color: #6ec7ed;
+}
+
+button {
+  padding: 1rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  border: none;
+  border-radius: 5px;
+  background: darkgrey;
+  text-align: center;
+  text-decoration: none;
+  font: black;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: white;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  position: absolute;
+  top: 80%;
+  left: 43%;
+}
+
+@media only screen and (max-width: 950px) {
+  .header1 p,
+  .header2 p {
+    font-size: 3rem;
+  }
+  img {
+    margin: auto 1rem;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  li {
+    font-size: 1rem;
+  }
+  img {
+    width: 15%;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  li {
+    font-size: 0.7rem;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+  }
+  img {
+    width: 10vh;
+  }
+}
