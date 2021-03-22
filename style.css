@@ -1,5 +1,9 @@
 /*@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");*/
 
+:root {
+  --primary-font: "Nexa Bold";
+  --secondary-font: "Nexa Light";
+}
 body {
   margin: 0;
   padding: 0;
@@ -12,7 +16,7 @@ ul {
 li {
   list-style: none;
   padding: 2rem;
-  font-family: "Nexa Light";
+  font-family: var(--secondary-font);
   font-weight: 400;
   font-size: 1.5rem;
   color: white;
@@ -91,14 +95,127 @@ p {
 
 h1 {
   font-size: 2.5rem;
-  color: black;
-  font-family: "Open Sans", sans-serif;
+  color: #6ec7ed;
+  font-family: var(--primary-font);
   font-weight: 700;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .some {
   margin-bottom: 2rem;
+}
+/***FORM****/
+section h1 {
+  margin-bottom: 0;
+}
+h3 {
+  font-family: var(--primary-font);
+  text-align: center;
+  color: #8c8b8b;
+}
+form {
+  background-color: #fbfbfb;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  border-top: solid 2px #1f93bf;
+  border-bottom: solid 2px #1f93bf;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 1.5rem;
+  justify-content: space-between;
+  row-gap: 1rem;
+  margin-top: 1rem;
+}
+legend {
+  font-family: var(--primary-font);
+  text-transform: uppercase;
+  font-size: large;
+  font-weight: bolder;
+  color: #1f93bf;
+  margin-bottom: 0.5rem;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.3rem;
+  width: 30%;
+  font-family: var(--secondary-font);
+  color: #1f93bf;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-size: smaller;
+}
+textarea,
+input,
+select {
+  height: 3rem;
+  border: solid 2px #1f93bf;
+  resize: none;
+  color: black;
+  font-family: var(--secondary-font);
+}
+/**styling input**/
+option {
+  font-family: var(--secondary-font);
+  text-transform: uppercase;
+  height: 1rem;
+  z-index: 99;
+}
+input[type="time"]::-webkit-calendar-picker-indicator,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+/***icons***/
+span {
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.5rem;
+  align-items: center;
+  height: 2rem;
+}
+#email-icon {
+  background-image: url(/icons/email.svg);
+  width: 2rem;
+  height: 1.3rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#phone-icon {
+  background-image: url(/icons/phone.svg);
+  width: 2rem;
+  height: 2.5rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#gym-icon {
+  background-image: url(/icons/location.svg);
+  width: 2rem;
+  height: 2.5rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#day-icon {
+  background-image: url(/icons/calendar.svg);
+  width: 2rem;
+  height: 1.3rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#time-icon {
+  background-image: url(/icons/time.svg);
+  width: 2rem;
+  height: 2rem;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 footer {
@@ -106,7 +223,29 @@ footer {
   background-color: #6ec7ed;
 }
 
-button {
+footer {
+  padding: 3rem;
+  background-color: #6ec7ed;
+}
+#button-rent {
+  font-family: var(--primary-font);
+  text-transform: uppercase;
+  color: white;
+  font-size: x-large;
+  font-weight: bolder;
+  background-color: #1f93bf;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border: none;
+  border-radius: 15px;
+}
+#button-container {
+  text-align: center;
+  margin-top: 1rem;
+}
+/*button {
   padding: 1rem;
   padding-left: 5rem;
   padding-right: 5rem;
@@ -125,7 +264,7 @@ button {
   position: absolute;
   top: 80%;
   left: 43%;
-}
+}*/
 
 @media only screen and (max-width: 950px) {
   .header1 p,
@@ -154,5 +293,7 @@ button {
   }
   img {
     width: 10vh;
+  }
+  fieldset {
   }
 }
