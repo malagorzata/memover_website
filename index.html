@@ -11,17 +11,19 @@
       <ul>
         <li>ABOUT US</li>
         <li>INFO</li>
-        <img src="Logo-white-fill.svg" />
+        <img class="logo" src="Logo-white-fill.svg" />
         <li>CONTACT</li>
         <li>CAMPAIGN</li>
       </ul>
     </nav>
     <main>
+      <section id="shortvideo">
       <video id="videoBG" poster="memover.jpg" autoplay muted loop>
       <source src="short-video.mp4" type="video/mp4" />
       </video>  
-      <!-- <button>hi</button> -->
-      <div class="some">
+        <a href="#some"><i class="arrow down"></i></a>
+      </section>
+      <div id="some">
           <h1>OUR CUSTOMERS</h1>
           <div class="posts">
           <div class="post">
@@ -38,9 +40,21 @@
         </div>
           </div>
       </div>
-      <div class="header2"><p>[ SEE OUR CAMPAIGN ]</p></div>
+<section id="longvideo">
+      <div id="video">
+        <video id="videoScr" src="short-video.mp4" onclick="stopVideo()">
+        </video>
+        <p id="intro" class="hidden">[ SEE OUR CAMPAIGN ]</p>
+
+      </div>
+        <div id="controls">
+          <div id="playBtn" alt="Play button"></div>
+          <div id="stopBtn" alt="Stop button"></div>
+      </div>
+      </section>
       <footer>HI THIS IS OUR PROJECT HELLO</footer>
 
     </main>
+    <script src="js.js"></script>
   </body>
 </html>
