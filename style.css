@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+/*@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");*/
 
 body {
   margin: 0;
@@ -12,7 +12,7 @@ ul {
 li {
   list-style: none;
   padding: 2rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Nexa Light";
   font-weight: 400;
   font-size: 1.5rem;
   color: white;
