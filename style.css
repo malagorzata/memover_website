@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
 
+* {
+  box-sizing: border-box;
+}
+:root {
+  --navheight: 100px;
+}
 body {
   margin: 0;
   padding: 0;
@@ -7,25 +13,30 @@ body {
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 li {
   list-style: none;
-  padding: 2rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: white;
+  margin: 0;
 }
 
 nav ul {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  height: var(--navheight);
 }
 
-img {
-  width: 20%;
+.logo {
+  width: 15%;
   margin: auto 5rem;
 }
 
@@ -33,22 +44,54 @@ nav {
   background-color: #6ec7ed;
   margin: 0;
   border: solid 1px white;
+  height: var(--navheight);
 }
 
-/* .header1 {
-  background-image: url(memover.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-width: 100%;
-  height: 80vh;
-  opacity: 80%;
-} */
+#shortvideo {
+  position: relative;
+  height: calc(100vh - var(--navheight));
+  width: 100%;
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 3px;
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  bottom: 7rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  animation: pulse 2s infinite;
+}
+
+.arrow:hover {
+  opacity: 50%;
+  border: solid black;
+  border-width: 0 5px 5px 0;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.8) rotate(45deg);
+  }
+
+  70% {
+    transform: scale(1.1) rotate(45deg);
+  }
+
+  100% {
+    transform: scale(0.8) rotate(45deg);
+  }
+}
 
 #videoBG {
   object-fit: cover;
   object-position: center;
   width: 100%;
-  height: 30rem;
+  height: 100%;
 }
 
 .header2 {
@@ -58,23 +101,6 @@ nav {
   max-width: 100%;
   height: 80vh;
   opacity: 80%;
-}
-
-p {
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
-  font-size: 5rem;
-  color: black;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  padding-top: 14rem;
 }
 
 .posts {
@@ -97,7 +123,7 @@ h1 {
   text-align: center;
 }
 
-.some {
+#some {
   margin-bottom: 2rem;
 }
 
@@ -106,25 +132,43 @@ footer {
   background-color: #6ec7ed;
 }
 
-button {
-  padding: 1rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  border: none;
-  border-radius: 5px;
-  background: darkgrey;
-  text-align: center;
-  text-decoration: none;
-  font: black;
-  font-size: 1.5rem;
-  letter-spacing: 1px;
+#video {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+p {
+  font-size: 4rem;
   color: white;
-  text-transform: uppercase;
-  transition: all 0.2s ease;
-  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
   position: absolute;
-  top: 80%;
-  left: 43%;
+  top: 14rem;
+  left: 9rem;
+  margin: auto 15rem;
+}
+
+#videoScr {
+  object-fit: cover;
+  object-position: center;
+  width: 70%;
+  height: 70%;
+}
+
+.hidden {
+  display: none;
+}
+#controls {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+#controls div {
+  width: 4.68em;
+  height: 4.68em;
+  margin: 0 1.5em 0 1.5em;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 950px) {
@@ -152,7 +196,33 @@ button {
     padding: 0.5rem;
     flex-wrap: wrap;
   }
-  img {
-    width: 10vh;
+  .logo {
+    width: 15vh;
+    margin: auto 1rem;
+  }
+  .posts {
+    flex-direction: column;
+  }
+  .post {
+    margin-bottom: 1rem;
+  }
+  #some h1 {
+    font-size: 1.5rem;
+  }
+  .post img {
+    width: 80%;
+  }
+}
+
+@media (orientation: portrait) {
+  #videoBG {
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  body {
+    --navheight: 50px;
   }
 }
