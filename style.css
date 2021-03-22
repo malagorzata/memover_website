@@ -167,10 +167,21 @@ p {
 #controls div {
   width: 4.68rem;
   height: 4.68rem;
-  margin: 0 1.5em 0 1.5em;
+  margin: 0 1.5rem 0 1.5rem;
   cursor: pointer;
 }
 
+#playBtn {
+  background-image: url(play.svg);
+  width: 4.68rem;
+  height: 4.68rem;
+}
+#stopBtn {
+  background-image: url(stop.svg);
+
+  width: 4.68rem;
+  height: 4.68rem;
+}
 @media only screen and (max-width: 950px) {
   .header1 p,
   .header2 p {
