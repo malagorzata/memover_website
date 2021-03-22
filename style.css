@@ -160,6 +160,7 @@ select {
   resize: none;
   color: black;
   font-family: var(--secondary-font);
+  font-size: medium;
 }
 /**styling input**/
 option {
