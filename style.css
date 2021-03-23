@@ -278,11 +278,49 @@ footer {
 
 p {
   font-size: 4rem;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
   position: absolute;
   top: 50%;
   padding: 20vw;
   transform: translateY(-50%);
   margin: auto;
+}
+
+#videoScr {
+  object-fit: cover;
+  object-position: center;
+  width: 70%;
+  height: 70%;
+}
+
+.hidden {
+  display: none;
+}
+#controls {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+#controls div {
+  width: 4.68rem;
+  height: 4.68rem;
+  margin: 0 1.5rem 0 1.5rem;
+  cursor: pointer;
+}
+
+#playBtn {
+  background-image: url(IMG/play.svg);
+  width: 4.68rem;
+  height: 4.68rem;
+}
+#stopBtn {
+  background-image: url(IMG/stop.svg);
+
+  width: 4.68rem;
+  height: 4.68rem;
 }
 footer {
   padding: 3rem;
@@ -334,7 +372,7 @@ footer {
   left: 43%;
 }*/
 
-#videoScr {
+/* #videoScr {
   object-fit: cover;
   object-position: center;
   width: 70%;
@@ -355,9 +393,9 @@ footer {
   height: 4.68rem;
   margin: 0 1.5rem 0 1.5rem;
   cursor: pointer;
-}
+} */
 
-#playBtn {
+/* #playBtn {
   background-image: url(IMG/play.svg);
   width: 4.68rem;
   height: 4.68rem;
@@ -367,7 +405,7 @@ footer {
 
   width: 4.68rem;
   height: 4.68rem;
-}
+} */
 
 @media only screen and (max-width: 1178px) {
   p {
