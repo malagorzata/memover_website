@@ -417,6 +417,9 @@ footer li a:hover {
   }
   .post img {
     width: 60%;
+    display: block;
+    margin: 0 auto;
+    height: auto;
   }
 }
 
