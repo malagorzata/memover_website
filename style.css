@@ -5,8 +5,8 @@
 }
 :root {
   --navheight: 100px;
-  --primary-font: "Nexa Bold";
-  --secondary-font: "Nexa Light";
+  --primary-font: "Nexa Bold", sans-serif;
+  --secondary-font: "Nexa Light", sans-serif;
 }
 
 html {
@@ -344,68 +344,6 @@ footer {
   text-align: center;
   margin-top: 1rem;
 }
-/*button {
-  padding: 1rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  border: none;
-  border-radius: 5px;
-  background: darkgrey;
-  text-align: center;
-  text-decoration: none;
-  font: black;
-  font-size: 1.5rem;
-  letter-spacing: 1px;
-  color: white;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
- 
-}
-
-#videoScr {
-  object-fit: cover;
-  object-position: center;
-  width: 70%;
-  height: 70%;
-}
-  top: 80%;
-  left: 43%;
-}*/
-
-/* #videoScr {
-  object-fit: cover;
-  object-position: center;
-  width: 70%;
-  height: 70%;
-}
-
-.hidden {
-  display: none;
-}
-#controls {
-  margin: 1rem;
-  display: flex;
-  justify-content: center;
-}
-
-#controls div {
-  width: 4.68rem;
-  height: 4.68rem;
-  margin: 0 1.5rem 0 1.5rem;
-  cursor: pointer;
-} */
-
-/* #playBtn {
-  background-image: url(IMG/play.svg);
-  width: 4.68rem;
-  height: 4.68rem;
-}
-#stopBtn {
-  background-image: url(IMG/stop.svg);
-
-  width: 4.68rem;
-  height: 4.68rem;
-} */
 
 @media only screen and (max-width: 1178px) {
   p {
