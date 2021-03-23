@@ -149,7 +149,7 @@ h1 {
 .rent_form {
   margin-top: 7rem;
 }
-section h1 {
+.rent_form h1 {
   margin-bottom: 0;
 }
 h3 {
@@ -195,7 +195,6 @@ label {
   text-transform: uppercase;
   font-size: smaller;
 }
-textarea,
 input,
 select {
   height: 3rem;
@@ -448,6 +447,21 @@ footer li a:hover {
     width: 90%;
     height: 90%;
   }
+  .rent_form h1 {
+    font-size: x-large;
+  }
+  .rent_form h3 {
+    font-size: medium;
+  }
+
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  label {
+    min-width: 60%;
+  }
 }
 
 @media (orientation: portrait) {
@@ -468,13 +482,11 @@ footer li a:hover {
     min-width: 40%;
   }
 }
-@media only screen and (max-width: 670px) {
-  fieldset {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
+@media only screen and (max-width: 500px) {
+  legend {
+    font-size: small;
   }
   label {
-    min-width: 60%;
+    font-size: smaller;
   }
 }
