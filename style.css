@@ -6,6 +6,11 @@
 :root {
   --navheight: 100px;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -61,7 +66,7 @@ nav {
   width: 5rem;
   height: 5rem;
   position: absolute;
-  bottom: 7rem;
+  bottom: 4rem;
   left: 0;
   right: 0;
   margin: auto;
@@ -143,9 +148,10 @@ p {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   position: absolute;
-  top: 14rem;
-  left: 9rem;
-  margin: auto 15rem;
+  top: 50%;
+  padding: 20vw;
+  transform: translateY(-50%);
+  margin: auto;
 }
 
 #videoScr {
@@ -181,6 +187,25 @@ p {
 
   width: 4.68rem;
   height: 4.68rem;
+}
+
+@media only screen and (max-width: 1178px) {
+  p {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 885px) {
+  p {
+    font-size: 2rem;
+  }
+
+  #controls div {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-size: cover;
+    margin: 0 0.8rem 0 0.8rem;
+  }
 }
 @media only screen and (max-width: 950px) {
   .header1 p,
@@ -222,6 +247,10 @@ p {
   }
   .post img {
     width: 80%;
+  }
+
+  p {
+    font-size: 1.5rem;
   }
 }
 
