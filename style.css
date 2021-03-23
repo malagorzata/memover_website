@@ -32,15 +32,12 @@ nav ul {
   align-items: center;
   margin: 0;
   height: var(--navheight);
-}
-
-ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-li {
+nav li {
   list-style: none;
   font-family: "Open Sans", sans-serif;
   padding: 2rem;
@@ -150,6 +147,9 @@ h1 {
 }
 
 /***FORM****/
+.rent_form {
+  margin-top: 7rem;
+}
 section h1 {
   margin-bottom: 0;
 }
@@ -227,45 +227,34 @@ span {
   align-items: center;
   height: 2rem;
 }
-#email-icon {
-  background-image: url(/icons/email.svg);
-  width: 2rem;
-  height: 1.3rem;
+label div {
   background-size: contain;
   background-repeat: no-repeat;
+}
+#email-icon {
+  background-image: url(./icons/email.svg);
+  width: 2rem;
+  height: 1.3rem;
 }
 #phone-icon {
-  background-image: url(/icons/phone.svg);
+  background-image: url(./icons/phone.svg);
   width: 1.5rem;
   height: 2.2rem;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 #gym-icon {
-  background-image: url(/icons/location.svg);
+  background-image: url(./icons/location.svg);
   width: 2rem;
   height: 2.5rem;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 #day-icon {
-  background-image: url(/icons/calendar.svg);
+  background-image: url(./icons/calendar.svg);
   width: 2rem;
   height: 1.3rem;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 #time-icon {
-  background-image: url(/icons/time.svg);
+  background-image: url(./icons/time.svg);
   width: 2rem;
   height: 2rem;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-footer {
-  padding: 3rem;
-  background-color: #6ec7ed;
 }
 
 /*LONG VIDEO*/
@@ -322,10 +311,40 @@ p {
   width: 4.68rem;
   height: 4.68rem;
 }
+/*FOOTER*/
 footer {
-  padding: 3rem;
   background-color: #6ec7ed;
+  text-align: center;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
 }
+footer h3,
+footer h4 {
+  font-family: var(--primary-font);
+  color: white;
+  text-transform: uppercase;
+}
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer li {
+  font-size: var(--secondary-font);
+  text-transform: uppercase;
+  margin: 0.5rem;
+}
+footer li a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s;
+}
+footer li a:hover {
+  font-size: larger;
+  transition: all 0.5s;
+}
+/*BUTTON*/
 #button-rent {
   font-family: var(--primary-font);
   text-transform: uppercase;
