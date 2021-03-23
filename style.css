@@ -273,7 +273,7 @@ p {
   font-weight: 700;
   position: absolute;
   top: 50%;
-  padding: 20vw;
+  padding: 10vw;
   transform: translateY(-50%);
   margin: auto;
 }
