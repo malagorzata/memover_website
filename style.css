@@ -40,7 +40,6 @@ nav ul {
 nav li {
   list-style: none;
   font-family: "Open Sans", sans-serif;
-  padding: 2rem;
   font-family: var(--secondary-font);
   font-weight: 400;
   font-size: 1.2rem;
@@ -50,7 +49,7 @@ nav li {
 
 .logo {
   width: 15%;
-  margin: auto 5rem;
+  margin: auto 2rem;
 }
 
 /*SHORT TOP VIDEO*/
@@ -258,7 +257,10 @@ label div {
 }
 
 /*LONG VIDEO*/
-
+#longvideo {
+  background-color: #6ec7ed;
+  padding: 2rem;
+}
 #video {
   display: flex;
   justify-content: center;
@@ -282,13 +284,13 @@ p {
   object-position: center;
   width: 70%;
   height: 70%;
+  margin-bottom: 1rem;
 }
 
 .hidden {
   display: none;
 }
 #controls {
-  margin: 1rem;
   display: flex;
   justify-content: center;
 }
@@ -393,8 +395,9 @@ footer li a:hover {
 }
 
 @media only screen and (max-width: 870px) {
-  li {
-    font-size: 1rem;
+  nav li {
+    font-size: 0.7rem;
+    padding: 0;
   }
   img {
     width: 15%;
@@ -407,6 +410,15 @@ footer li a:hover {
     width: 1.5rem;
     height: 2rem;
   }
+  .post {
+    margin-bottom: 1rem;
+  }
+  #some h1 {
+    font-size: 1.5rem;
+  }
+  .post img {
+    width: 60%;
+  }
 }
 
 @media only screen and (max-width: 670px) {
@@ -417,23 +429,24 @@ footer li a:hover {
   }
   .logo {
     width: 15vh;
-    margin: auto 1rem;
+    margin: auto 0.5rem;
   }
   .posts {
     flex-direction: column;
   }
-  .post {
-    margin-bottom: 1rem;
-  }
-  #some h1 {
+
+  p {
     font-size: 1.5rem;
   }
   .post img {
     width: 80%;
   }
 
-  p {
-    font-size: 1.5rem;
+  #videoScr {
+    object-fit: cover;
+    object-position: center;
+    width: 90%;
+    height: 90%;
   }
 }
 

@@ -1,14 +1,14 @@
 window.addEventListener("load", start);
 
-let videoScr = document.querySelector("#videoScr");
-let playBtn = document.querySelector("#playBtn");
-let stopBtn = document.querySelector("#stopBtn");
-let intro = document.querySelector("#intro");
+const videoScr = document.querySelector("#videoScr");
+const playBtn = document.querySelector("#playBtn");
+const stopBtn = document.querySelector("#stopBtn");
+const intro = document.querySelector("#intro");
 
 function start() {
   playBtn.addEventListener("click", playVideo);
   stopBtn.addEventListener("click", stopVideo);
-  document.querySelector("#intro").classList.remove("hidden");
+  intro.classList.remove("hidden");
 }
 
 function playVideo() {
@@ -16,8 +16,8 @@ function playVideo() {
   if (videoScr.paused == true) {
     videoScr.play();
     console.log(videoScr.paused);
-    document.querySelector("#playBtn").classList.add("hidden");
-    document.querySelector("#intro").classList.add("hidden");
+    playBtn.classList.add("hidden");
+    intro.classList.add("hidden");
   } else {
     videoScr.pause();
   }
@@ -26,8 +26,8 @@ function playVideo() {
 function stopVideo() {
   console.log("playVideo");
   videoScr.pause();
-  document.querySelector("#playBtn").classList.remove("hidden");
-  document.querySelector("#intro").classList.remove("hidden");
+  playBtn.classList.remove("hidden");
+  intro.classList.remove("hidden");
 
   videoScr.currentTime = 0;
 }

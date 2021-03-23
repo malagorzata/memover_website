@@ -2,7 +2,7 @@
   <defs>
     <style>
       .cls-1 {
-        fill: none;
+        fill: #fffdfd;
         stroke: #000;
         stroke-miterlimit: 10;
         stroke-width: 3px;
@@ -10,5 +10,5 @@
     </style>
   </defs>
   <circle class="cls-1" cx="37.75" cy="37.75" r="36.25"/>
-  <polygon class="cls-1" points="65.9 37.99 23.49 62.48 23.49 13.51 65.9 37.99"/>
+  <polygon points="65.9 37.99 23.49 62.48 23.49 13.51 65.9 37.99"/>
 </svg>
