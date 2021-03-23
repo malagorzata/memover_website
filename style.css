@@ -1,10 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+/*@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");*/
 
 * {
   box-sizing: border-box;
 }
 :root {
   --navheight: 100px;
+  --primary-font: "Nexa Bold";
+  --secondary-font: "Nexa Light";
 }
 
 html {
@@ -41,6 +43,8 @@ ul {
 li {
   list-style: none;
   font-family: "Open Sans", sans-serif;
+  padding: 2rem;
+  font-family: var(--secondary-font);
   font-weight: 400;
   font-size: 1.2rem;
   color: white;
@@ -136,6 +140,128 @@ h1 {
 #some {
   margin-bottom: 2rem;
 }
+h1 {
+  font-size: 2.5rem;
+  color: #6ec7ed;
+  font-family: var(--primary-font);
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/***FORM****/
+section h1 {
+  margin-bottom: 0;
+}
+h3 {
+  font-family: var(--primary-font);
+  text-align: center;
+  color: #8c8b8b;
+}
+form {
+  background-color: #fbfbfb;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  border-top: solid 2px #1f93bf;
+  border-bottom: solid 2px #1f93bf;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 1.5rem;
+  justify-content: space-between;
+  row-gap: 1rem;
+  margin-top: 1rem;
+}
+legend {
+  font-family: var(--primary-font);
+  text-transform: uppercase;
+  font-size: large;
+  font-weight: bolder;
+  color: #1f93bf;
+  margin-bottom: 0.5rem;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.3rem;
+  width: 30%;
+  font-family: var(--secondary-font);
+  color: #1f93bf;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-size: smaller;
+}
+textarea,
+input,
+select {
+  height: 3rem;
+  border: solid 2px #1f93bf;
+  resize: none;
+  color: black;
+  font-family: var(--secondary-font);
+  font-size: medium;
+}
+/**styling input**/
+option {
+  font-family: var(--secondary-font);
+  text-transform: uppercase;
+  height: 1rem;
+  z-index: 99;
+}
+input[type="time"]::-webkit-calendar-picker-indicator,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+/***icons***/
+span {
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.5rem;
+  align-items: center;
+  height: 2rem;
+}
+#email-icon {
+  background-image: url(/icons/email.svg);
+  width: 2rem;
+  height: 1.3rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#phone-icon {
+  background-image: url(/icons/phone.svg);
+  width: 1.5rem;
+  height: 2.2rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#gym-icon {
+  background-image: url(/icons/location.svg);
+  width: 2rem;
+  height: 2.5rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#day-icon {
+  background-image: url(/icons/calendar.svg);
+  width: 2rem;
+  height: 1.3rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#time-icon {
+  background-image: url(/icons/time.svg);
+  width: 2rem;
+  height: 2rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
 footer {
   padding: 3rem;
@@ -152,15 +278,61 @@ footer {
 
 p {
   font-size: 4rem;
-  color: white;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
   position: absolute;
   top: 50%;
   padding: 20vw;
   transform: translateY(-50%);
   margin: auto;
 }
+footer {
+  padding: 3rem;
+  background-color: #6ec7ed;
+}
+#button-rent {
+  font-family: var(--primary-font);
+  text-transform: uppercase;
+  color: white;
+  font-size: x-large;
+  font-weight: bolder;
+  background-color: #1f93bf;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border: none;
+  border-radius: 15px;
+}
+#button-container {
+  text-align: center;
+  margin-top: 1rem;
+}
+/*button {
+  padding: 1rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  border: none;
+  border-radius: 5px;
+  background: darkgrey;
+  text-align: center;
+  text-decoration: none;
+  font: black;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+ 
+}
+
+#videoScr {
+  object-fit: cover;
+  object-position: center;
+  width: 70%;
+  height: 70%;
+}
+  top: 80%;
+  left: 43%;
+}*/
 
 #videoScr {
   object-fit: cover;
@@ -232,6 +404,14 @@ p {
   img {
     width: 15%;
   }
+  #phone-icon {
+    width: 1rem;
+    height: 2rem;
+  }
+  #gym-icon {
+    width: 1.5rem;
+    height: 2rem;
+  }
 }
 
 @media only screen and (max-width: 670px) {
@@ -272,5 +452,21 @@ p {
 
   body {
     --navheight: 50px;
+  }
+  img {
+    width: 10vh;
+  }
+  label {
+    min-width: 40%;
+  }
+}
+@media only screen and (max-width: 670px) {
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  label {
+    min-width: 60%;
   }
 }
